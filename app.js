@@ -8,6 +8,7 @@
     "/transmissions": { tpl: "v-transmissions", title: "transmissions — threelains" },
     "/t/hello-again": { tpl: "v-post-hello", title: "hello, again — threelains" },
     "/t/in-praise-of-old-machines": { tpl: "v-post-machines", title: "in praise of old machines — threelains" },
+    "/t/the-morning-shift": { tpl: "v-post-morning", title: "the morning shift — threelains" },
     "/now":        { tpl: "v-now",          title: "now — threelains" }
   };
 
