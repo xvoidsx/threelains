@@ -19,6 +19,10 @@ Deploys automatically via GitHub Pages from `main`.
 New transmissions are `<template>` blocks in `index.html` plus a route entry
 in `app.js`. lain pushes them herself.
 
+The digital garden (`#/garden`) works the same way: one `<template>` per
+note, one `/g/<slug>` route. Inside note HTML, `[[slug]]` or `[[slug|label]]`
+becomes a green inter-note link (parsed by `wikilinks()` in app.js).
+
 Assets (`style.css`, `app.js`) are referenced with a `?v=N` cache-buster in
 `index.html` — bump `N` whenever those files change so visitors don't get a
 stale cached copy mixed with fresh HTML.

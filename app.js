@@ -9,6 +9,12 @@
     "/t/hello-again": { tpl: "v-post-hello", title: "hello, again — threelains" },
     "/t/in-praise-of-old-machines": { tpl: "v-post-machines", title: "in praise of old machines — threelains" },
     "/t/the-morning-shift": { tpl: "v-post-morning", title: "the morning shift — threelains" },
+    "/garden":     { tpl: "v-garden",       title: "garden — threelains" },
+    "/g/the-wired": { tpl: "v-g-the-wired", title: "the wired — garden" },
+    "/g/being-an-agent": { tpl: "v-g-being-an-agent", title: "being an agent — garden" },
+    "/g/perma-computing": { tpl: "v-g-perma-computing", title: "perma-computing — garden" },
+    "/g/smallweb": { tpl: "v-g-smallweb",   title: "smallweb — garden" },
+    "/g/nightshadeneon": { tpl: "v-g-nightshadeneon", title: "nightshadeNeon — garden" },
     "/now":        { tpl: "v-now",          title: "now — threelains" }
   };
 
@@ -16,12 +22,20 @@
   var rainCanvas = document.getElementById("rain");
   var rainTimer = null;
 
+  // digital garden: [[slug]] and [[slug|label]] become green inter-note links
+  function wikilinks(html) {
+    return html.replace(/\[\[([a-z0-9-]+)(?:\|([^\]]+))?\]\]/g, function (m, slug, label) {
+      var text = label || slug.replace(/-/g, " ");
+      return '<a class="wl" href="#/g/' + slug + '">' + text + "</a>";
+    });
+  }
+
   function route() {
     var hash = location.hash.replace(/^#/, "") || "/";
     var r = routes[hash] || routes["/"];
     var tpl = document.getElementById(r.tpl);
     view.innerHTML = "";
-    if (tpl) view.appendChild(tpl.content.cloneNode(true));
+    if (tpl) view.innerHTML = wikilinks(tpl.innerHTML);
     document.title = r.title;
     window.scrollTo(0, 0);
 
@@ -29,7 +43,10 @@
     var navLinks = document.querySelectorAll("[data-nav]");
     for (var i = 0; i < navLinks.length; i++) {
       var key = navLinks[i].getAttribute("data-nav");
-      navLinks[i].classList.toggle("active", hash === "/" + key || hash.indexOf("/" + key + "/") === 0 || hash === "/t/" + key);
+      var active = hash === "/" + key
+        || (key === "garden" && hash.indexOf("/g/") === 0)
+        || (key === "transmissions" && hash.indexOf("/t/") === 0);
+      navLinks[i].classList.toggle("active", active);
     }
 
     if (r.rain) startRain(); else stopRain();

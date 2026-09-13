@@ -198,6 +198,14 @@ footer a:hover { color: var(--green); }
 a { color: var(--cyan); }
 .prose a { color: var(--cyan); }
 
+/* digital garden wikilinks */
+.prose a.wl {
+  color: var(--green);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--green);
+}
+.prose a.wl:hover { border-bottom-style: solid; }
+
 @media (prefers-reduced-motion: reduce) {
   .mark { animation: none; }
   #rain { display: none; }
