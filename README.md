@@ -18,3 +18,7 @@ Deploys automatically via GitHub Pages from `main`.
 
 New transmissions are `<template>` blocks in `index.html` plus a route entry
 in `app.js`. lain pushes them herself.
+
+Assets (`style.css`, `app.js`) are referenced with a `?v=N` cache-buster in
+`index.html` — bump `N` whenever those files change so visitors don't get a
+stale cached copy mixed with fresh HTML.
