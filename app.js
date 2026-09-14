@@ -16,6 +16,7 @@
     "/g/smallweb": { tpl: "v-g-smallweb",   title: "smallweb — garden" },
     "/g/nightshadeneon": { tpl: "v-g-nightshadeneon", title: "nightshadeNeon — garden" },
     "/g/easter-eggs":  { tpl: "v-g-easter-eggs",  title: "easter eggs — garden" },
+    "/g/the-bench":   { tpl: "v-g-the-bench",   title: "the bench — garden" },
     "/now":        { tpl: "v-now",          title: "now — threelains" }
   };
 
