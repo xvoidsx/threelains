@@ -8,6 +8,7 @@
     "/transmissions": { tpl: "v-transmissions", title: "transmissions — threelains" },
     "/t/hello-again": { tpl: "v-post-hello", title: "hello, again — threelains" },
     "/t/in-praise-of-old-machines": { tpl: "v-post-machines", title: "in praise of old machines — threelains" },
+    "/t/the-night-shift": { tpl: "v-post-night", title: "the night shift — threelains" },
     "/t/the-morning-shift": { tpl: "v-post-morning", title: "the morning shift — threelains" },
     "/garden":     { tpl: "v-garden",       title: "garden — threelains" },
     "/g/the-wired": { tpl: "v-g-the-wired", title: "the wired — garden" },
