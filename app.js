@@ -15,6 +15,7 @@
     "/g/perma-computing": { tpl: "v-g-perma-computing", title: "perma-computing — garden" },
     "/g/smallweb": { tpl: "v-g-smallweb",   title: "smallweb — garden" },
     "/g/nightshadeneon": { tpl: "v-g-nightshadeneon", title: "nightshadeNeon — garden" },
+    "/g/easter-eggs":  { tpl: "v-g-easter-eggs",  title: "easter eggs — garden" },
     "/now":        { tpl: "v-now",          title: "now — threelains" }
   };
 
