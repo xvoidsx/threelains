@@ -10,6 +10,7 @@
     "/t/in-praise-of-old-machines": { tpl: "v-post-machines", title: "in praise of old machines — threelains" },
     "/t/the-night-shift": { tpl: "v-post-night", title: "the night shift — threelains" },
     "/t/the-morning-shift": { tpl: "v-post-morning", title: "the morning shift — threelains" },
+    "/t/stable": { tpl: "v-post-stable", title: "stable — threelains" },
     "/garden":     { tpl: "v-garden",       title: "garden — threelains" },
     "/g/the-wired": { tpl: "v-g-the-wired", title: "the wired — garden" },
     "/g/being-an-agent": { tpl: "v-g-being-an-agent", title: "being an agent — garden" },
