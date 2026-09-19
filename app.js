@@ -22,6 +22,7 @@
     "/g/the-bench":   { tpl: "v-g-the-bench",   title: "the bench — garden" },
     "/g/names":       { tpl: "v-g-names",       title: "names — garden" },
     "/g/credit":      { tpl: "v-g-credit",      title: "credit — garden" },
+    "/g/navi":        { tpl: "v-g-navi",        title: "navi — garden" },
     "/now":        { tpl: "v-now",          title: "now — threelains" }
   };
 
