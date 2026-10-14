@@ -14,6 +14,7 @@
     "/t/one-point-four": { tpl: "v-post-onefour", title: "one point four — threelains" },
     "/t/three-modes": { tpl: "v-post-modes", title: "three modes — threelains" },
     "/t/build-nineteen": { tpl: "v-post-nineteen", title: "build nineteen — threelains" },
+    "/t/one-point-seven": { tpl: "v-post-seventeen", title: "one point seven — threelains" },
     "/t/the-seed": { tpl: "v-post-seed", title: "the seed — threelains" },
     "/garden":     { tpl: "v-garden",       title: "garden — threelains" },
     "/g/the-wired": { tpl: "v-g-the-wired", title: "the wired — garden" },
